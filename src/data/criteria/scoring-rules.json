@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "rubric": {
+    "unknown": "No verified evidence — excluded from weighted average",
+    "limited": "Partial or basic capability",
+    "moderate": "Meets typical SMB need",
+    "strong": "Well documented, good fit",
+    "excellent": "Best-in-class for this criterion"
+  },
+  "priorityWeightTemplates": {
+    "3": [0.35, 0.33, 0.32],
+    "4": [0.28, 0.24, 0.24, 0.24],
+    "5": [0.25, 0.2, 0.18, 0.17, 0.2]
+  },
+  "noClearWinnerThreshold": 5,
+  "customRecommendationRules": {
+    "requires": ["uniqueWorkflow OR highCustomization OR customization priority"],
+    "blocks": ["no technical staff", "low budget AND simple use case"]
+  },
+  "brukdCtaTriggers": [
+    "custom_recommended",
+    "governance_insufficient",
+    "integration_complexity",
+    "uncertain_requirements >= 3",
+    "hybrid_evaluation"
+  ],
+  "stalenessDays": 90
+}
