@@ -100,7 +100,7 @@ export function ExplainabilityPanel({ result }: { result: AssessmentResult }) {
             ))}
           </ol>
           <p className="mt-3 text-xs text-slate-500">
-            Missing evidence (unknown) is excluded from the weighted average — never treated as proof of safety or risk.
+            Missing evidence (unknown) is excluded from the weighted average, never treated as proof of safety or risk.
           </p>
         </div>
       )}

@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-/** Ordinal scoring rubric — never infer from missing data */
+/** Ordinal scoring rubric, never infer from missing data */
 export const ScoreLevelSchema = z.enum([
   "unknown",
   "limited",

@@ -41,12 +41,12 @@ export function runGovernanceGate(
     }
     if (product.scores.data_controls === "unknown") {
       warnings.push(
-        "Data control documentation is limited — verify before adopting with sensitive data.",
+        "Data control documentation is limited, verify before adopting with sensitive data.",
       );
     }
     if (product.scores.security === "unknown") {
       warnings.push(
-        "Security documentation is limited — independent verification recommended.",
+        "Security documentation is limited, independent verification recommended.",
       );
     }
   }

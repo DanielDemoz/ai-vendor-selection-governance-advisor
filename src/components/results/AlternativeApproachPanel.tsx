@@ -38,7 +38,7 @@ export function AlternativeApproachPanel({
             ))}
           </ul>
           <p className="mt-3 text-xs text-slate-500">
-            We recommend custom development conservatively — simple use cases with no technical staff
+            We recommend custom development conservatively, simple use cases with no technical staff
             should start with commercial tools or free tiers.
           </p>
         </div>
@@ -46,7 +46,7 @@ export function AlternativeApproachPanel({
 
       {type === "hybrid" && (
         <p className="mt-3 text-sm text-slate-600">
-          Your use cases span multiple categories — a single product may not cover everything.
+          Your use cases span multiple categories, a single product may not cover everything.
           Consider pairing a general assistant with a specialized tool for automation, coding, or customer service.
         </p>
       )}

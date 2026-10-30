@@ -14,10 +14,10 @@ export function AssessPageClient() {
       <div className="mb-6 flex flex-wrap items-start justify-between gap-4">
         <div>
           <h1 className="text-3xl font-bold text-slate-900">AI Tool Assessment</h1>
-          <p className="mt-1 text-slate-600">Answer a few short questions — no long forms required.</p>
+          <p className="mt-1 text-slate-600">Answer a few short questions, no long forms required.</p>
           {savedAt && (
             <p className="mt-1 text-xs text-slate-500">
-              Progress saved — you can close this tab and continue later.
+              Progress saved, you can close this tab and continue later.
             </p>
           )}
         </div>

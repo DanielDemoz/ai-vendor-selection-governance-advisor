@@ -327,7 +327,7 @@ export function runAssessment(
 
       if (aStrengths.join() !== bStrengths.join()) {
         noClearWinner = true;
-        noClearWinnerExplanation = `Your decision depends on whether ${aStrengths[0]?.replace(/_/g, " ")} or ${bStrengths[0]?.replace(/_/g, " ")} is more important — both ${eligible[0].product.product} and ${eligible[1].product.product} are strong options with different trade-offs.`;
+        noClearWinnerExplanation = `Your decision depends on whether ${aStrengths[0]?.replace(/_/g, " ")} or ${bStrengths[0]?.replace(/_/g, " ")} is more important, both ${eligible[0].product.product} and ${eligible[1].product.product} are strong options with different trade-offs.`;
       }
     }
   }

@@ -41,7 +41,7 @@ export function SiteFooter() {
       <div className="mx-auto max-w-5xl px-4 text-center text-sm text-slate-500 sm:px-6">
         <p>Vendor-neutral AI selection and governance advisor for SMBs.</p>
         <p className="mt-2 text-xs">
-          There is no universally best AI tool — only a better fit for your business, use case, and priorities.
+          There is no universally best AI tool, only a better fit for your business, use case, and priorities.
         </p>
         <p className="mt-2 text-xs">
           Built by <a href="https://www.danieldemoz.com" className="underline">Daniel S. Demoz</a>. Scoring is rule-based and explained with each result. It supports a decision. It does not make one.

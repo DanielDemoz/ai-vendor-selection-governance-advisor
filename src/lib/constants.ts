@@ -117,7 +117,7 @@ export const INITIAL_STATE: QuestionnaireState = {
 };
 
 export const DEMO_SCENARIOS: { id: string; name: string; description: string }[] = [
-  { id: "marketing-agency", name: "Small Marketing Agency", description: "Writing, research, marketing — 5 users, low budget, Google Workspace" },
+  { id: "marketing-agency", name: "Small Marketing Agency", description: "Writing, research, marketing, 5 users, low budget, Google Workspace" },
   { id: "professional-services", name: "Professional Services Firm", description: "Document analysis, customer data, high privacy, Microsoft 365" },
   { id: "retail-business", name: "Small Retail Business", description: "Customer support, marketing, automation, Shopify, low budget" },
   { id: "data-heavy", name: "Data-Heavy SMB", description: "Data analysis, confidential data, technical users" },

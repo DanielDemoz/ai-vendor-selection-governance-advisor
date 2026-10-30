@@ -51,7 +51,7 @@ export function evaluateAlternativeApproach(
     return {
       type: "custom",
       reason:
-        "Your requirements suggest specialized workflows, strong customization needs, and available technical capability — a custom or in-house approach may be worth evaluating.",
+        "Your requirements suggest specialized workflows, strong customization needs, and available technical capability, a custom or in-house approach may be worth evaluating.",
       confidence: profile.uniqueWorkflow ? "high" : "moderate",
     };
   }
@@ -60,7 +60,7 @@ export function evaluateAlternativeApproach(
     return {
       type: "hybrid",
       reason:
-        "Your selected use cases span multiple categories — you may benefit from a combination of specialized tools rather than a single product.",
+        "Your selected use cases span multiple categories, you may benefit from a combination of specialized tools rather than a single product.",
       toolCount: 2,
     };
   }
@@ -73,7 +73,7 @@ export function evaluateAlternativeApproach(
     return {
       type: "open_source",
       reason:
-        "You indicated openness to open-source options and have technical staff — self-hosted solutions may offer stronger data control.",
+        "You indicated openness to open-source options and have technical staff, self-hosted solutions may offer stronger data control.",
     };
   }
 
@@ -87,7 +87,7 @@ export function evaluateAlternativeApproach(
     return {
       type: "ai_not_appropriate",
       reason:
-        "Based on your inputs, a commercial AI investment may not be the best next step — clarify your business need and expected outcomes first.",
+        "Based on your inputs, a commercial AI investment may not be the best next step, clarify your business need and expected outcomes first.",
     };
   }
 
@@ -99,7 +99,7 @@ export function evaluateAlternativeApproach(
       return {
         type: "ai_not_appropriate",
         reason:
-          "Advanced use cases with a free budget and no technical staff make most AI tools a poor fit right now — consider starting with free tiers or delaying until requirements are clearer.",
+          "Advanced use cases with a free budget and no technical staff make most AI tools a poor fit right now, consider starting with free tiers or delaying until requirements are clearer.",
       };
     }
   }

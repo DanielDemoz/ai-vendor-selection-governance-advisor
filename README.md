@@ -8,11 +8,11 @@ This is a **decision-support system**, not a vendor ranking website.
 
 ## Philosophy
 
-- **Vendor-neutral** — no commissions, no default bias toward famous or expensive products
-- **Evidence-based** — product data includes sources, verification dates, and source types
-- **Deterministic scoring** — recommendations use transparent weighted rules, not an LLM
-- **Governance-aware** — sensitive data + high privacy triggers governance gates
-- **Honest uncertainty** — missing evidence is never treated as proof of safety or risk
+- **Vendor-neutral**: no commissions, no default bias toward famous or expensive products
+- **Evidence-based**: product data includes sources, verification dates, and source types
+- **Deterministic scoring**: recommendations use transparent weighted rules, not an LLM
+- **Governance-aware**: sensitive data + high privacy triggers governance gates
+- **Honest uncertainty**: missing evidence is never treated as proof of safety or risk
 
 ## Architecture
 
@@ -49,7 +49,7 @@ Questionnaire answers
 
 | Level | Meaning |
 |-------|---------|
-| `unknown` | No verified evidence — excluded from weighted average |
+| `unknown` | No verified evidence, excluded from weighted average |
 | `limited` | Partial or basic capability |
 | `moderate` | Meets typical need |
 | `strong` | Well documented, good fit |
@@ -71,7 +71,7 @@ Examples:
 The system can recommend:
 1. Commercial AI products (top 3 when evidence exists)
 2. Open-source / self-hosted
-3. Custom / in-house (conservative rules — requires technical staff + drivers)
+3. Custom / in-house (conservative rules, requires technical staff + drivers)
 4. Hybrid multi-tool approach
 5. No clear winner (top scores within 5 points, different strength profiles)
 6. AI may not be appropriate yet
@@ -87,17 +87,17 @@ Each product includes:
 
 Products older than 90 days are flagged in results UI.
 
-## Phase 2 — Governance & Explainability
+## Phase 2: Governance & Explainability
 
-- **Governance summary panel** — pre-recommendation checks for sensitive data, training exclusion, Canada requirements, and evidence freshness
-- **"Why was this recommended?"** — per-product priority breakdown with optional "View how we calculated this"
-- **Trade-offs panel** — why the top option won and what you give up
-- **No clear winner** — side-by-side comparison of two strong options
-- **Alternative approach cards** — custom/in-house, hybrid, open-source, or "AI not appropriate" with guidance
-- **Evidence labeling** — vendor-stated vs independent vs unavailable on every source
-- **Next steps** — actionable follow-up based on outcome type
-- **Save & continue** — progress persisted in localStorage across sessions
-- **Export / print / share** — download `.txt` results, print-friendly layout, shareable results URL (no account)
+- **Governance summary panel**: pre-recommendation checks for sensitive data, training exclusion, Canada requirements, and evidence freshness
+- **"Why was this recommended?"**: per-product priority breakdown with optional "View how we calculated this"
+- **Trade-offs panel**: why the top option won and what you give up
+- **No clear winner**: side-by-side comparison of two strong options
+- **Alternative approach cards**: custom/in-house, hybrid, open-source, or "AI not appropriate" with guidance
+- **Evidence labeling**: vendor-stated vs independent vs unavailable on every source
+- **Next steps**: actionable follow-up based on outcome type
+- **Save & continue**: progress persisted in localStorage across sessions
+- **Export / print / share**: download `.txt` results, print-friendly layout, shareable results URL (no account)
 
 ## Getting started
 
@@ -123,8 +123,8 @@ When the assessment indicates custom development, hybrid complexity, governance 
 
 ## Disclaimer
 
-Recommendations are based on user inputs and product information available at assessment time. Product features, pricing, policies, and terms change. Results are decision-support information — not legal, privacy, security, or financial advice.
+Recommendations are based on user inputs and product information available at assessment time. Product features, pricing, policies, and terms change. Results are decision-support information, not legal, privacy, security, or financial advice.
 
 ## License
 
-Private / project-specific — see repository owner for terms.
+Private / project-specific, see repository owner for terms.

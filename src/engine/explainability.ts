@@ -98,7 +98,7 @@ export function buildGovernanceSummary(
     checks.push({
       label: "Canada preference",
       status: "caution",
-      detail: "Canada preferred — verify residency with vendor before adoption.",
+      detail: "Canada preferred, verify residency with vendor before adoption.",
     });
   }
 
@@ -134,7 +134,7 @@ export function buildGovernanceSummary(
       : overallConfidence === "moderate"
         ? "Some governance areas need verification before adoption."
         : overallConfidence === "low"
-          ? "Several governance gaps — independent verification recommended."
+          ? "Several governance gaps, independent verification recommended."
           : "Governance information insufficient for fully confident recommendations.";
 
   return {
@@ -142,7 +142,7 @@ export function buildGovernanceSummary(
     headline,
     checks,
     evidenceNote:
-      "Information labeled vendor-stated comes from official documentation. Independent assessment reflects our structured evaluation. Unknown means insufficient evidence — not treated as proof of safety or risk.",
+      "Information labeled vendor-stated comes from official documentation. Independent assessment reflects our structured evaluation. Unknown means insufficient evidence, not treated as proof of safety or risk.",
   };
 }
 
@@ -228,7 +228,7 @@ export function buildCalculationSteps(
     { label: "Weighting", value: profile.priorities.map((p) => `${priorityLabel(p)} ${Math.round((weights.get(p) ?? 0) * 100)}%`).join(", ") },
     { label: "Scoring rubric", value: "Ordinal levels (limited → excellent); unknown excluded" },
     { label: "Governance gate", value: "Applied before final ranking for sensitive data + high privacy" },
-    { label: "Output", value: "Deterministic weighted match — same inputs always produce same ranking" },
+    { label: "Output", value: "Deterministic weighted match, same inputs always produce same ranking" },
   ];
   return steps;
 }
@@ -312,7 +312,7 @@ export function formatResultsAsText(
   },
 ): string {
   const lines: string[] = [
-    "AI Vendor Selection & Governance Advisor — Results",
+    "AI Vendor Selection & Governance Advisor, Results",
     "================================================",
     "",
     result.explainability.governanceSummary.headline,
@@ -329,7 +329,7 @@ export function formatResultsAsText(
 
   result.topThree.forEach((r, i) => {
     lines.push(`${i + 1}. ${r.product.product} (${r.product.vendor})`);
-    lines.push(`   Fit: ${r.fitDisplay} — ${r.fitLabel}`);
+    lines.push(`   Fit: ${r.fitDisplay}, ${r.fitLabel}`);
     lines.push(`   Pros: ${r.product.strengths.join("; ")}`);
     lines.push(`   Cons: ${r.product.limitations.join("; ")}`);
     lines.push("");
@@ -342,7 +342,7 @@ export function formatResultsAsText(
   }
 
   lines.push("NEXT STEPS", ...result.explainability.nextSteps.map((s) => `- ${s}`));
-  lines.push("", "Disclaimer: Decision-support only — not legal, privacy, security, or financial advice.");
+  lines.push("", "Disclaimer: Decision-support only, not legal, privacy, security, or financial advice.");
 
   return lines.join("\n");
 }

@@ -9,7 +9,7 @@ export const scenarios: {
   {
     id: "marketing-agency",
     name: "Small Marketing Agency",
-    description: "Writing, research, marketing — 5 users, low budget, Google Workspace",
+    description: "Writing, research, marketing, 5 users, low budget, Google Workspace",
     profile: {
       useCases: ["writing_content", "research", "marketing"],
       primaryUseCase: "writing_content",
